@@ -12,7 +12,6 @@ video {
     vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -206,3 +205,44 @@ ul.footer-ul {
     font-size: 40px;
     margin-bottom: 40px;
   }
+
+
+
+  .box-img-header img{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.ajustes-header-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-size: 30px
+}
+
+.box-item-cardapio{
+    position: relative;
+    content: "";
+    background: #fff;
+    height: 100px;
+    width: 100%;
+    border-radius: 16px;
+    margin: 15px 0;
+}
+
+.box-item-cardapio p{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    font-size: 23px;
+}
+
+.box-item-cardapio a{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    font-size: 23px;
+    text-decoration: none;
+}
