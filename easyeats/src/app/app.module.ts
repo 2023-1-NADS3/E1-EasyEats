@@ -15,6 +15,8 @@ import { StatusPedidoComponent } from './status-pedido/status-pedido.component';
 import { ConfiguracoesComponent } from './configuracoes/configuracoes.component';
 import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 import { HistoricoDePedidosComponent } from './historico-de-pedidos/historico-de-pedidos.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { HistoricoDePedidosComponent } from './historico-de-pedidos/historico-de
     StatusPedidoComponent,
     ConfiguracoesComponent,
     RecuperarSenhaComponent,
-    HistoricoDePedidosComponent
+    HistoricoDePedidosComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
