@@ -17,6 +17,7 @@ import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.compo
 import { HistoricoDePedidosComponent } from './historico-de-pedidos/historico-de-pedidos.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListHamburguersComponent } from './cardapios-hamburgueres/list-hamburguers/list-hamburguers.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     RecuperarSenhaComponent,
     HistoricoDePedidosComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListHamburguersComponent
   ],
   imports: [
     BrowserModule,
