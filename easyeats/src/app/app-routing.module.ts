@@ -9,6 +9,7 @@ import { EspecificacoesDrinkComponent } from './especificacoes-drink/especificac
 import { EspecificacoesFoodComponent } from './especificacoes-food/especificacoes-food.component';
 import { HistoricoDePedidosComponent } from './historico-de-pedidos/historico-de-pedidos.component';
 import { HomeComponent } from './home/home.component';
+import { ListHamburgueresComponent } from './list-hamburgueres/list-hamburgueres.component';
 import { LoginComponent } from './login/login.component';
 import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 import { StatusPedidoComponent } from './status-pedido/status-pedido.component';
@@ -26,7 +27,8 @@ const routes: Routes = [
   { path: 'especificacoes-food', component: EspecificacoesFoodComponent },
   { path: 'especificacoes-drink', component: EspecificacoesDrinkComponent },
   { path: 'cardapio-drink', component: CardapioDrinkComponent },
-  { path: 'configuracoes', component: ConfiguracoesComponent }
+  { path: 'configuracoes', component: ConfiguracoesComponent },
+  { path: 'cardapio-hamburgueres', component: ListHamburgueresComponent },
 ];
 
 @NgModule({
