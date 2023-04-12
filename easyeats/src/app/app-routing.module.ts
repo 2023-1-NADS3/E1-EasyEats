@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'cadastro', component: CadastroComponent },
   { path: 'login', component: LoginComponent },
   { path: 'recuperar', component: RecuperarSenhaComponent },
-  { path: 'teste', component: ListHamburguersComponent },
+  { path: 'cardapio-hamburgueres', component: ListHamburguersComponent },
 
 
 ];

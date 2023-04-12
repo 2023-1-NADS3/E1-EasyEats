@@ -25,9 +25,18 @@ export class HambService {
       first()
     )
   }
-
-  excluirHamburgueres(id:number){
+/*
+  excluirHamburgueres(id:number):Observable<any>{
     return this.httpClient.delete<HamburguerModel[]>(`${this.API}lista-hamburguers/${id}`)
+  } */
+
+  public excluirHamburhueres(id: number): Observable<any> {
+    return this.httpClient.delete<any>(`${this.API}lista-hamburguers/${id}`).pipe(
+      res => res,
+      error => error
+    )
   }
+
+
 
 }

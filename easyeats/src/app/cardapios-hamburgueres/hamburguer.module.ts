@@ -9,11 +9,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 
-
-
 @NgModule({
   declarations: [
-    CriarHamburgueresComponent
+    CriarHamburgueresComponent,
   ],
   imports: [
     CommonModule,

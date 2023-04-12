@@ -35,7 +35,7 @@ export class CriarHamburgueresComponent {
   enviarHamburguer(): any {
     this.service.criarHamburguers(this.cadastroForm.value).subscribe((res)=>{
       console.log('criado')
-    })
+    }), location.reload()
 
   }
 }

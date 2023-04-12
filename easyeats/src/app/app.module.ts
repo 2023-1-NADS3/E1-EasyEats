@@ -18,6 +18,8 @@ import { HamburguerModule } from './cardapios-hamburgueres/hamburguer.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CriarBebidasComponent } from './criar-bebidas/criar-bebidas.component';
+import { ListarBebidasComponent } from './cardapios-bebidas/listar-bebidas/listar-bebidas.component';
 
 
 
@@ -32,6 +34,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     ListHamburguersComponent,
+    CriarBebidasComponent,
+    ListarBebidasComponent,
 
   ],
   imports: [

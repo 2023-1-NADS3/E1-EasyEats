@@ -2,19 +2,17 @@
   "lista-hamburguers": [
     {
       "id": 1,
-      "hamburguer": "X-Bacon",
-      "ingrediente_1": "hamburguer 180g",
-      "ingrediente_2": "fatias de bacon",
-      "ingrediente_3": "ovo",
-      "ingrediente_4": "salada"
-    },
+      "hamburguer": "sadasda",
+      "ingrediente_1": "dasda",
+      "ingrediente_2": "dadad",
+      "ingrediente_3": "adada",
+      "ingrediente_4": "dsadasdas"
+    }
+  ],
+  "lista-bebidas": [
     {
-      "id": 2,
-      "hamburguer": "asda",
-      "ingrediente_1": "adad",
-      "ingrediente_2": "sada",
-      "ingrediente_3": "asda",
-      "ingrediente_4": "ada"
+      "id": 1,
+      "bebida": "coca-cola"
     }
   ]
 }

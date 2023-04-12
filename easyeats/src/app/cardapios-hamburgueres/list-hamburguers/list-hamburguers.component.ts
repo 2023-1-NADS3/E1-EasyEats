@@ -18,22 +18,32 @@ export class ListHamburguersComponent {
     public dialog:MatDialog
   ){}
 
-  ngOnInit():void{
+  ngOnInit(): void {
     this.service.listarHamburguers().subscribe(
       res => this.listaHamburguer = res,
-      error => error
+      error => error,
     );
   }
 
   onAdd(): void {
     const dialogRef = this.dialog.open(CriarHamburgueresComponent);
+    
   }
 
-  onDelete(Id:HamburguerModel):void {
-    this.service.excluirHamburgueres(Id.id).subscribe(
-      res => this.listaHamburguer = res,
+ 
+  onDelete(id: number){
+    this.service.excluirHamburhueres(id).subscribe(
+      res => {
+        this.listaHamburguer = this.listaHamburguer.filter();
+      },
       error => error
-
-    )
+    ), location.reload()
   }
+
+
+
+
+
+
+  
 }
