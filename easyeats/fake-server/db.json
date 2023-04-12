@@ -1,0 +1,13 @@
+{
+  "lista-hamburguers": [
+    {
+      "id": 1,
+      "hamburguer": "X-Bacon",
+      "ingrediente_1": "hamburguer 180g",
+      "ingrediente_2": "fatias de bacon",
+      "ingrediente_3": "ovo",
+      "ingrediente_4": "salada"
+    }
+
+  ]
+}

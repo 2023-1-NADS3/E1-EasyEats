@@ -4,17 +4,14 @@ import { HambService } from '../hamb-shared/hamb.service';
 import { MatDialog } from '@angular/material/dialog';
 import { CriarHamburgueresComponent } from '../criar-hamburgueres/criar-hamburgueres.component';
 
-
-
-
 @Component({
   selector: 'app-list-hamburguers',
   templateUrl: './list-hamburguers.component.html',
   styleUrls: ['./list-hamburguers.component.css']
 })
 export class ListHamburguersComponent {
-/*
-  elemento:HamburguerModel[] =[]
+
+  public listaHamburguer: HamburguerModel | any;
 
   constructor(
     private service:HambService,
@@ -22,21 +19,13 @@ export class ListHamburguersComponent {
   ){}
 
   ngOnInit():void{
-    this.listarTodosHamburgueres();
+    this.service.listarHamburguers().subscribe(
+      res => this.listaHamburguer = res,
+      error => error
+    );
   }
 
-  listarTodosHamburgueres(): void{
-    this.service.listarHamburguers().subscribe((res) => (this.elemento = res.data))
-  }
-
-  onAdd():void{
+  onAdd(): void {
     const dialogRef = this.dialog.open(CriarHamburgueresComponent);
-
-    dialogRef
-      .afterClosed()
-      .subscribe((res)=>{
-        this.listarTodosHamburgueres()
-      })
   }
-*/
 }

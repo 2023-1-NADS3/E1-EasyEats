@@ -1,14 +1,36 @@
 
 
-<input type="text" formControlName="name">
-<input type="text" formControlName="ingrediente_1">
-<input type="text" formControlName="ingrediente_1">
-<input type="text" formControlName="ingrediente_1">
-<input type="text" formControlName="ingrediente_1">
+<form [formGroup]="form">
 
-<button
-(click)="onSubmit()"
+    <mat-form-field appearance="fill">
+      <mat-label>Nome do Hamburguer</mat-label>
+      <input matInput formControlName="hamburguer" >
+    </mat-form-field>
 
->Salvar</button>
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrediente 1</mat-label>
+      <input matInput formControlName="ingrediente_2">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrediente 2</mat-label>
+      <input matInput formControlName="ingrediente_3">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrediente 3</mat-label>
+      <input matInput formControlName="ingrediente_4">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Ingrediente 4</mat-label>
+      <input matInput formControlName="ingrediente_1">
+    </mat-form-field>
+
+    <button (click)="enviarHamburguer()" mat-raised-button color="accent">adicionar</button>
+
+  </form>
+
+
 
 

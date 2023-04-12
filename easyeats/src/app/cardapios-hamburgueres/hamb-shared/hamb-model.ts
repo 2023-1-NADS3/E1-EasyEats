@@ -1,6 +1,6 @@
 export interface HamburguerModel {
   id:number,
-  name:string,
+  hamburguer:string,
   ingrediente_1: string,
   ingrediente_2: string,
   ingrediente_3: string,

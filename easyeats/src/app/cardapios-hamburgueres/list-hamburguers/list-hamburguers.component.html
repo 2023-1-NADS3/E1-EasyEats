@@ -1,5 +1,14 @@
-<p>list-hamburguers works!</p>
+<button (click)="onAdd()" mat-raised-button color="warn">Warn</button>
 
-<button>asasas</button>
+<div *ngFor="let item of listaHamburguer" >
+  {{item.id}}
+  <h1>{{item.hamburguer}}</h1>
+  <p>{{item.ingrediente_1}}</p>
+  <p>{{item.ingrediente_2}}</p>
+  <p>{{item.ingrediente_3}}</p>
+  <p>{{item.ingrediente_4}}</p>
 
-<h1>asdadasd</h1>
+</div>
+
+
+

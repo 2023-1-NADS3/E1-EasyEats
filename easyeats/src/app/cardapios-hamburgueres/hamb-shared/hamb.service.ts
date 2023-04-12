@@ -7,17 +7,21 @@ import { HamburguerModel } from './hamb-model';
   providedIn: 'root'
 })
 export class HambService {
+  [x: string]: any;
 
-  private readonly API = "";
+  private API = "http://localhost:3000/";
 
   constructor( private httpClient:HttpClient ) { }
 
   listarHamburguers():Observable<any>{
-    return this.httpClient.get<HamburguerModel[]>(this.API)
+    return this.httpClient.get<HamburguerModel[]>(`${this.API}lista-hamburguers`).pipe(
+      res => res,
+      error => error
+    )
   }
 
   criarHamburguers(record:HamburguerModel):Observable<any>{
-    return this.httpClient.post<HamburguerModel[]>(this.API, record).pipe(
+    return this.httpClient.post<HamburguerModel[]>(`${this.API}lista-hamburguers`, record).pipe(
       first()
     )
   }

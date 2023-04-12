@@ -1,9 +1,8 @@
 import { Component, Inject } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { HambService } from '../hamb-shared/hamb.service';
-
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { HamburguerModel } from '../hamb-shared/hamb-model';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { HambService } from '../hamb-shared/hamb.service';
 
 @Component({
   selector: 'app-criar-hamburgueres',
@@ -11,35 +10,32 @@ import { HamburguerModel } from '../hamb-shared/hamb-model';
   styleUrls: ['./criar-hamburgueres.component.css']
 })
 export class CriarHamburgueresComponent {
-  public form:FormGroup;
+
+  public form: FormGroup
 
   constructor(
     @Inject(MAT_DIALOG_DATA)
+    public data: HamburguerModel,
+    public dialogRef: MatDialogRef<HamburguerModel>,
+    public formBuilder: FormBuilder,
     public service:HambService,
-    public formBuiler:FormBuilder,
-    public dialogRef:MatDialogRef<HamburguerModel>
-
   ){
-    this.form = this.cadastroForm;
+    this.form = this.cadastroForm
   }
 
-  public cadastroForm:FormGroup=this.formBuiler.group({
-    name: [null],
+  public cadastroForm: FormGroup = this.formBuilder.group({
+    id: [null],
+    hamburguer: [null],
     ingrediente_1: [null],
     ingrediente_2: [null],
     ingrediente_3: [null],
     ingrediente_4: [null],
+  });
 
-  })
-
-  onSubmit():any{
+  enviarHamburguer(): any {
     this.service.criarHamburguers(this.cadastroForm.value).subscribe((res)=>{
-
+      console.log('criado')
     })
-  }
 
-  onCancel():void{
-    this.dialogRef.close();
   }
-
 }
