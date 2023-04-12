@@ -27,7 +27,7 @@ export class HambService {
   }
 
   excluirHamburgueres(id:number){
-    return this.httpClient.delete<HamburguerModel[]>(`${this.API}/${id}`)
+    return this.httpClient.delete<HamburguerModel[]>(`${this.API}lista-hamburguers/${id}`)
   }
 
 }

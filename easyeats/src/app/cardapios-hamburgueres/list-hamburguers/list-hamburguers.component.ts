@@ -28,4 +28,12 @@ export class ListHamburguersComponent {
   onAdd(): void {
     const dialogRef = this.dialog.open(CriarHamburgueresComponent);
   }
+
+  onDelete(Id:HamburguerModel):void {
+    this.service.excluirHamburgueres(Id.id).subscribe(
+      res => this.listaHamburguer = res,
+      error => error
+
+    )
+  }
 }
