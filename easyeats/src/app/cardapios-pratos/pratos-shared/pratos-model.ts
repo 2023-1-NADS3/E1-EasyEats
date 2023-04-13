@@ -1,9 +1,9 @@
-export interface HamburguerModel {
+export interface PratosModel {
   id:number,
-  hamburguer:string,
+  prato:string,
   ingrediente_1: string,
   ingrediente_2: string,
   ingrediente_3: string,
   ingrediente_4: string,
-  preco_hamburguer: string
+  preco_prato: string
 }

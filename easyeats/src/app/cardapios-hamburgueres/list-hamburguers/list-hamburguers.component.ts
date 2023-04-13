@@ -27,10 +27,8 @@ export class ListHamburguersComponent {
 
   onAdd(): void {
     const dialogRef = this.dialog.open(CriarHamburgueresComponent);
-    
   }
 
- 
   onDelete(id: number){
     this.service.excluirHamburhueres(id).subscribe(
       res => {
@@ -39,11 +37,4 @@ export class ListHamburguersComponent {
       error => error
     ), location.reload()
   }
-
-
-
-
-
-
-  
 }

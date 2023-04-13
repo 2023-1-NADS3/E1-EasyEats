@@ -18,11 +18,13 @@ import { HamburguerModule } from './cardapios-hamburgueres/hamburguer.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CriarBebidasComponent } from './criar-bebidas/criar-bebidas.component';
 import { ListarBebidasComponent } from './cardapios-bebidas/listar-bebidas/listar-bebidas.component';
-
-
-
+import { BebidasModule } from './cardapios-bebidas/bebidas.module';
+import { ListarPratosComponent } from './cardapios-pratos/listar-pratos/listar-pratos.component';
+import { PratosModule } from './cardapios-pratos/pratos.module';
+import { CriarAperitivosComponent } from './cardapios-aperitivos/criar-aperitivos/criar-aperitivos.component';
+import { ListarAperitivosComponent } from './cardapios-aperitivos/listar-aperitivos/listar-aperitivos.component';
+import { AperitivosModule } from './cardapios-aperitivos/aperitivos.module';
 
 @NgModule({
   declarations: [
@@ -34,8 +36,9 @@ import { ListarBebidasComponent } from './cardapios-bebidas/listar-bebidas/lista
     HeaderComponent,
     FooterComponent,
     ListHamburguersComponent,
-    CriarBebidasComponent,
     ListarBebidasComponent,
+    ListarPratosComponent,
+    ListarAperitivosComponent
 
   ],
   imports: [
@@ -49,7 +52,10 @@ import { ListarBebidasComponent } from './cardapios-bebidas/listar-bebidas/lista
     HamburguerModule,
     MatButtonModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BebidasModule,
+    PratosModule,
+    AperitivosModule
 
   ],
   providers: [],

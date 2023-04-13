@@ -30,12 +30,12 @@ export class CriarHamburgueresComponent {
     ingrediente_2: [null],
     ingrediente_3: [null],
     ingrediente_4: [null],
+    preco_hamburguer: [null]
   });
 
   enviarHamburguer(): any {
     this.service.criarHamburguers(this.cadastroForm.value).subscribe((res)=>{
-      console.log('criado')
+      console.log('hamburguer criado')
     }), location.reload()
-
   }
 }

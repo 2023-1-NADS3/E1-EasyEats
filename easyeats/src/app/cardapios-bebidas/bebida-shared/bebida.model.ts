@@ -1,5 +1,5 @@
 export interface BebidaModel {
     id:number,
-    bebida:string
+    bebida:string,
+    preco_bebida:string
   }
-  

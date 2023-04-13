@@ -7,7 +7,6 @@ import { HamburguerModel } from './hamb-model';
   providedIn: 'root'
 })
 export class HambService {
-  [x: string]: any;
 
   private API = "http://localhost:3000/";
 
@@ -25,10 +24,6 @@ export class HambService {
       first()
     )
   }
-/*
-  excluirHamburgueres(id:number):Observable<any>{
-    return this.httpClient.delete<HamburguerModel[]>(`${this.API}lista-hamburguers/${id}`)
-  } */
 
   public excluirHamburhueres(id: number): Observable<any> {
     return this.httpClient.delete<any>(`${this.API}lista-hamburguers/${id}`).pipe(

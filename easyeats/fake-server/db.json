@@ -2,17 +2,48 @@
   "lista-hamburguers": [
     {
       "id": 1,
-      "hamburguer": "sadasda",
-      "ingrediente_1": "dasda",
-      "ingrediente_2": "dadad",
-      "ingrediente_3": "adada",
-      "ingrediente_4": "dsadasdas"
+      "hamburguer": "X-Bacon",
+      "ingrediente_1": "Hamburguer 200g",
+      "ingrediente_2": "Bacon Fatiado",
+      "ingrediente_3": "Salada",
+      "ingrediente_4": "Tomate",
+      "preco_hamburguer": "23"
     }
   ],
   "lista-bebidas": [
     {
       "id": 1,
-      "bebida": "coca-cola"
+      "bebida": "coca-cola",
+      "preco_bebida": "9"
+    }
+  ],
+  "lista-pratos": [
+    {
+      "id": 1,
+      "prato": "Moda da Casa",
+      "ingrediente_1": "Arroz",
+      "ingrediente_2": "Feijão",
+      "ingrediente_3": "Batata",
+      "ingrediente_4": "Bife Acebolado",
+      "preco_prato": "23"
+    },
+    {
+      "id": 2,
+      "prato": "Misturinha",
+      "ingrediente_1": "Arroz",
+      "ingrediente_2": "Feijão",
+      "ingrediente_3": "Ovo Cozido",
+      "ingrediente_4": "Bacon",
+      "preco_prato": "19"
+    }
+  ],
+  "lista-aperitivos": [
+    {
+      "id": 1,
+      "aperitivo": "Onion Rings",
+      "ingrediente_1": "Molho de Alho",
+      "ingrediente_2": "Molho Barbecue",
+      "preco_aperitivo": "15"
     }
   ]
 }
