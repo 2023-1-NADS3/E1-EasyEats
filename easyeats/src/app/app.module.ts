@@ -25,6 +25,8 @@ import { PratosModule } from './cardapios-pratos/pratos.module';
 import { CriarAperitivosComponent } from './cardapios-aperitivos/criar-aperitivos/criar-aperitivos.component';
 import { ListarAperitivosComponent } from './cardapios-aperitivos/listar-aperitivos/listar-aperitivos.component';
 import { AperitivosModule } from './cardapios-aperitivos/aperitivos.module';
+import { CriarSobremesaComponent } from './cardapios-sobremesas/criar-sobremesa/criar-sobremesa.component';
+import { ListarSobremesaComponent } from './cardapios-sobremesas/listar-sobremesa/listar-sobremesa.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AperitivosModule } from './cardapios-aperitivos/aperitivos.module';
     ListHamburguersComponent,
     ListarBebidasComponent,
     ListarPratosComponent,
-    ListarAperitivosComponent
+    ListarAperitivosComponent,
+    CriarSobremesaComponent,
+    ListarSobremesaComponent
 
   ],
   imports: [

@@ -45,5 +45,14 @@
       "ingrediente_2": "Molho Barbecue",
       "preco_aperitivo": "15"
     }
+  ],
+  "lista-sobremesas":[
+    {
+      "id": 1,
+      "sobremesa": "Petit Gateau",
+      "ingrediente_1": "Bolo Quente",
+      "ingrediente_2": "Sorvete de Baunilha",
+      "preco_sobremesa": "20"
+    }
   ]
 }
