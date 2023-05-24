@@ -7,9 +7,9 @@
     <div class="box-login">
       <img class="icon_people" src="../assets/imagens/icon_people_.png" alt="">
       <div class="inputs">
-        <input placeholder="Digite seu email" type="text">
-        <input placeholder="Digite a senha" type="text">
-        <button>Entrar</button>
+        <input placeholder="Digite seu email" type="text" #email>
+        <input placeholder="Digite a senha" type="text" #senha>
+        <button (click)="loginUser(email.value, senha.value)">Entrar</button>
         <a href="/cadastro">Cadastre-se</a>
       </div>
   </div>

@@ -31,5 +31,4 @@ export class PratosSharedService {
       error => error
     )
   }
-
 }
