@@ -6,30 +6,31 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { RecuperarSenhaComponent } from './recuperar-senha/recuperar-senha.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ListHamburguersComponent } from './cardapios-hamburgueres/list-hamburguers/list-hamburguers.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HamburguerModule } from './cardapios-hamburgueres/hamburguer.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ListarBebidasComponent } from './cardapios-bebidas/listar-bebidas/listar-bebidas.component';
-import { BebidasModule } from './cardapios-bebidas/bebidas.module';
-import { ListarPratosComponent } from './cardapios-pratos/listar-pratos/listar-pratos.component';
-import { PratosModule } from './cardapios-pratos/pratos.module';
-import { CriarAperitivosComponent } from './cardapios-aperitivos/criar-aperitivos/criar-aperitivos.component';
 import { ListarAperitivosComponent } from './cardapios-aperitivos/listar-aperitivos/listar-aperitivos.component';
 import { AperitivosModule } from './cardapios-aperitivos/aperitivos.module';
-import { CriarSobremesaComponent } from './cardapios-sobremesas/criar-sobremesa/criar-sobremesa.component';
-import { ListarSobremesaComponent } from './cardapios-sobremesas/listar-sobremesa/listar-sobremesa.component';
 import { CardapiosComponent } from './cardapios/cardapios.component';
 import { FritasComponent } from './fritas/fritas.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { EntrarComponent } from './entrar/entrar.component';
+import { FavoritosComponent } from './favoritos/favoritos.component';
+import { BurguerOneComponent } from './burguer-one/burguer-one.component';
+import { BurguerTwoComponent } from './burguer-two/burguer-two.component';
+import { BurguerThreeComponent } from './burguer-three/burguer-three.component';
+import { BurguerFourComponent } from './burguer-four/burguer-four.component';
+import { BurguerFiveComponent } from './burguer-five/burguer-five.component';
+import { CardapioHamburguerComponent } from './cardapio-hamburguer/cardapio-hamburguer.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { AlteraDadosComponent } from './altera-dados/altera-dados.component';
+import { DeletaContaComponent } from './deleta-conta/deleta-conta.component';
 
 @NgModule({
   declarations: [
@@ -37,18 +38,23 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
     HomeComponent,
     LoginComponent,
     CadastroComponent,
-    RecuperarSenhaComponent,
     HeaderComponent,
     FooterComponent,
-    ListHamburguersComponent,
-    ListarBebidasComponent,
-    ListarPratosComponent,
     ListarAperitivosComponent,
-    CriarSobremesaComponent,
-    ListarSobremesaComponent,
     CardapiosComponent,
     FritasComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    EntrarComponent,
+    FavoritosComponent,
+    BurguerOneComponent,
+    BurguerTwoComponent,
+    BurguerThreeComponent,
+    BurguerFourComponent,
+    BurguerFiveComponent,
+    CardapioHamburguerComponent,
+    PerfilComponent,
+    AlteraDadosComponent,
+    DeletaContaComponent
 
   ],
   imports: [
@@ -59,12 +65,9 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
     HttpClientModule,
     MatDialogModule,
     MatToolbarModule,
-    HamburguerModule,
     MatButtonModule,
     MatIconModule,
     BrowserAnimationsModule,
-    BebidasModule,
-    PratosModule,
     AperitivosModule
 
   ],

@@ -6,10 +6,21 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-fritas',
   templateUrl: './fritas.component.html',
-  styleUrls: ['./fritas.component.css']
+  styleUrls: ['./fritas.component.css'],
 })
 export class FritasComponent {
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private  http: HttpClient, private router: Router) {
+    this.titulo = 'Batata Frita'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Batata Fresquinha, cheddar, bacon e maionese da casa'; // Inicialização da propriedade 'descricao' no construtor
+    this.img = '../../assets/imagens/img-teste.png'; // Inicialização da propriedade 'img' no construtor
+    this.preco = '19,99'; // Inicialização da propriedade 'preco' no construtor
+  }
+
+  
+  titulo: string; // Declaração da propriedade 'titulo' sem inicialização
+  descricao: string; // Declaração da propriedade 'descrição' sem inicialização
+  img: string; // Declaração da propriedade 'img' sem inicialização
+  preco: string; // Declaração da propriedade 'preço' sem inicialização
 
   adicionaComida() {
     console.log("Função Acionada");
@@ -26,7 +37,7 @@ export class FritasComponent {
       (res) => {
         console.log('Enviei o Json do Item');
         console.log(res);
-        if (res === 'Item Atualiazado') {
+        if (res === 'Item Atualizado') {
           this.router.navigate(['/carrinho']);
         } else {
           alert('Erro no Banco, Refaça o Login.');

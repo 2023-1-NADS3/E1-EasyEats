@@ -13,13 +13,18 @@ div {
   padding: 10px;
 }
 
-.btn-aperitivos p{
+.btn-aperitivos p {
   font-size: 20px;
   margin-left: 15px;
   margin-bottom: 0;
 }
 
-.btn-aperitivos span{
+.btn-aperitivos span {
   font-size: 14px;
   margin-left: 15px;
+}
+
+.div-ajuste {
+  display: flex;
+  align-items: center;
 }

@@ -11,6 +11,12 @@ import * as $ from 'jquery';
 export class CarrinhoComponent {
   constructor(private http: HttpClient, private router: Router) {this.itens = [];}
 
+  nome = localStorage.getItem('nome');
+  email = localStorage.getItem('email');
+  telefone = localStorage.getItem('telefone');
+  senha = localStorage.getItem('senha');
+  id = localStorage.getItem('id');
+
   itens: any[];
 
   ngOnInit(){
@@ -22,7 +28,7 @@ export class CarrinhoComponent {
   }
 
   Itens() {
-    $.get('http://localhost:3000/carrinhoUser', {}, (res) => {
+    $.get('http://localhost:3000/carrinhoUser', { email:this.email }, (res) => {
       let itens = res;
       this.exibirItens(itens);
     });

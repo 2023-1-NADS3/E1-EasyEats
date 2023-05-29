@@ -86,3 +86,7 @@
     justify-content: end;
     align-items: flex-end;
 }
+
+.itemId {
+    display: none;
+}

@@ -18,6 +18,44 @@ export class ListarAperitivosComponent {
     public dialog: MatDialog
   ){}
 
+  aperitivos = [
+    {
+      imagem: '../../../assets/imagens/aperitivos/batata.png',
+      nome: 'Porção de Fritas',
+      descricao: 'Crocante por fora e fofinha por dentro',
+      preco: 'R$ 19,99',
+      link: '../porcao-de-fritas'
+    },
+    {
+      imagem: '../../../assets/imagens/aperitivos/bolin.png',
+      nome: 'Porção Bolinho',
+      descricao: 'Crocante por fora e fofinha por dentro',
+      preco: 'R$ 19,99',
+      link: '../porcao-bolinho'
+    },
+    {
+      imagem: '../../../assets/imagens/aperitivos/coxinha.png',
+      nome: 'Porção de Coxinha',
+      descricao: 'Crocante por fora e fofinha por dentro',
+      preco: 'R$ 19,99',
+      link: '../porcao-coxinha'
+    },
+    {
+      imagem: '../../../assets/imagens/aperitivos/frnaguinho.png',
+      nome: 'Porção Franguin',
+      descricao: 'Crocante por fora e fofinha por dentro',
+      preco: 'R$ 19,99',
+      link: '../porcao-franguinho'
+    },
+    {
+      imagem: '../../../assets/imagens/aperitivos/onion.png',
+      nome: 'Porção Onion Rings',
+      descricao: 'Crocante por fora e fofinha por dentro',
+      preco: 'R$ 19,99',
+      link: '../porcao-onion'
+    },
+  ];
+
   ngOnInit():void{
     this.service.listaAperitivos().subscribe(
       res => this.listaAperitivos = res,

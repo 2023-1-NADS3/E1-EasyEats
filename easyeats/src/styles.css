@@ -1,84 +1,7 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,
+dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -133,7 +56,7 @@ table {
 }
 
 body {
-    background: linear-gradient(192.4deg, #000000 8.2%, #220000 54.08%, #000000 87.57%);
+    background: linear-gradient(192.4deg, #000000 8.2%, #220000 54.08%, #000000 87.57%) center, no-repeat;
     height: 100vh;
     position: relative;
 }
@@ -288,92 +211,6 @@ ul.footer-ul {
 
 
 
-.box-tipo-cardapio {
-    background: #000;
-    padding-left: 26px;
-    border-radius: 16px;
-    height: 100px;
-    filter: drop-shadow(0 0 4px #f9f9f9);
-    margin: 30px 0;
-    display: flex;
-    align-items: center;
-}
-
-.box-tipo-cardapio-1 {
-    background: url(assets/imagens/div-1.png) center no-repeat;
-    height: 46px;
-    display: flex;
-    align-items: flex-end;
-    margin: 30px 0;
-    filter: drop-shadow(0 0 2px #f9f9f9);
-    border-radius: 16px;
-    padding: 20px 0 20px 15px;
-}
-
-.box-tipo-cardapio-1 a {
-    font-size: 21px;
-    color: #FFF6D4;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.box-tipo-cardapio-2 {
-    background: url(assets/imagens/div.png) center no-repeat;
-    height: 46px;
-    display: flex;
-    align-items: flex-end;
-    margin: 30px 0;
-    filter: drop-shadow(0 0 2px #f9f9f9);
-    border-radius: 16px;
-    padding: 20px 0 20px 15px;
-}
-
-.box-tipo-cardapio-2 a {
-    font-size: 21px;
-    color: #FFF6D4;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.box-tipo-cardapio {
-    background: url(assets/imagens/div-2.png) center no-repeat;
-    height: 46px;
-    display: flex;
-    align-items: flex-end;
-    margin: 30px 0;
-    filter: drop-shadow(0 0 2px #f9f9f9);
-    border-radius: 16px;
-    padding: 20px 0 20px 15px;
-}
-
-.box-tipo-cardapio a {
-    font-size: 21px;
-    color: #FFF6D4;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.box-tipo-cardapio-3 {
-    background: url(assets/imagens/div-3.png) center no-repeat;
-    height: 46px;
-    display: flex;
-    align-items: flex-end;
-    margin: 30px 0;
-    filter: drop-shadow(0 0 2px #f9f9f9);
-    border-radius: 16px;
-    padding: 20px 0 20px 15px;
-}
-
-.box-tipo-cardapio-3 a {
-    font-size: 21px;
-    color: #FFF6D4;
-    text-decoration: none;
-    font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
-}
 
 .box-title-main h1 {
     color: #FFF6D4;
@@ -455,4 +292,11 @@ body {
 
 .box-btn-adicionar button {
     width: 50%;
+}
+
+@media (min-width: 850px){
+    main, header, footer{
+        display: none;
+    }
+
 }

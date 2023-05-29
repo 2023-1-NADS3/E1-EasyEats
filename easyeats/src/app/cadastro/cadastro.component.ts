@@ -19,7 +19,7 @@ export class CadastroComponent {
     console.log("Passei no primeiro ponto do cadastro");
 
     if (nome.length < 3 || nome.length > 30) {
-      alert("Seu nome precisa ter entre 3 e 30 caracteres.");
+      alert("Seu nome precisa ter entre 3 e 30 caracteres."); 
       console.log("Seu nome precisa ter entre 3 e 30 caracteres.");
     }
     else if (senha.length < 6 || senha.length > 12) {

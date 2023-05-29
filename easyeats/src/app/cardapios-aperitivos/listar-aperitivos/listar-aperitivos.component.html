@@ -1,105 +1,23 @@
 <app-header></app-header>
 <main>
-  <!--<div class="container">
-   <div class="box-btn-adicionar">
-      <h1>Olá, gostaria de adicionar um novo item no Cardápio?</h1>
-      <button (click)="onAdd()" mat-raised-button color="warn">Adicionar</button>
-    </div> 
-    <div class="container">
-      <div class="flex">
-        <div class="box-100">
-          <div class="box-tipo-cardapio" *ngFor="let item of listaAperitivos">
-            <div class="flex-1">
-              <div>
-                 {{ item.id }}
-                <a href="">{{ item.aperitivo }}</a>
-                <p>{{ item.ingrediente_1 }}</p>
-                 <p>{{ item.ingrediente_2 }}</p>
-    
-                 <button (click)="onDelete(item.id)">Deletar</button>
-              </div>
-              <div>
-                <p>R$ {{ item.preco_aperitivo }}</p>
-              </div>
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>-->
   <div class="container">
     <div class="flex">
-      <a class="box-100 btn-aperitivos" href="../porcao-de-fritas">
+      <a class="box-100 btn-aperitivos" *ngFor="let aperitivo of aperitivos" [href]="aperitivo.link">
         <div class="flex-1">
           <div class="box-20">
-            <img src="../../../assets/imagens/aperitivos/batata.png" alt="">
+            <img class="img-responsive" [src]="aperitivo.imagem" alt="">
           </div>
           <div class="box-60">
-            <p>Porção de Fritas</p>
-            <p style="font-size: 13px;">Crocante por fora e fofinha por dentro</p>
+            <p>{{ aperitivo.nome }}</p>
+            <p style="font-size: 13px;">{{ aperitivo.descricao }}</p>
           </div>
           <div class="box-20">
-            <p style="font-size: 14px">R$ 19,99</p>
-          </div>
-        </div>
-      </a>
-      <a class="box-100 btn-aperitivos" href="../cardapio-aperitivos">
-        <div class="flex-1">
-          <div class="box-20">
-            <img src="../../../assets/imagens/aperitivos/bolin.png" alt="">
-          </div>
-          <div class="box-60">
-            <p>Porção Bolinho</p>
-            <p style="font-size: 13px;">Crocante por fora e fofinha por dentro</p>
-          </div>
-          <div class="box-20">
-            <p style="font-size: 14px">R$ 19,99</p>
-          </div>
-        </div>
-      </a>
-      <a class="box-100 btn-aperitivos" href="../cardapio-aperitivos">
-        <div class="flex-1">
-          <div class="box-20">
-            <img src="../../../assets/imagens/aperitivos/coxinha.png" alt="">
-          </div>
-          <div class="box-60">
-            <p>Porção de Coxinha</p>
-            <p style="font-size: 13px;">Crocante por fora e fofinha por dentro</p>
-          </div>
-          <div class="box-20">
-            <p style="font-size: 14px">R$ 19,99</p>
-          </div>
-        </div>
-      </a>
-      <a class="box-100 btn-aperitivos" href="../cardapio-aperitivos">
-        <div class="flex-1">
-          <div class="box-20">
-            <img src="../../../assets/imagens/aperitivos/frnaguinho.png" alt="">
-          </div>
-          <div class="box-60">
-            <p>Porção Franguin</p>
-            <p style="font-size: 13px;">Crocante por fora e fofinha por dentro</p>
-          </div>
-          <div class="box-20">
-            <p style="font-size: 14px">R$ 19,99</p>
-          </div>
-        </div>
-      </a>
-      <a class="box-100 btn-aperitivos" href="../cardapio-aperitivos">
-        <div class="flex-1">
-          <div class="box-20">
-            <img src="../../../assets/imagens/aperitivos/onion.png" alt="">
-          </div>
-          <div class="box-60">
-            <p>Porção Onion Rings</p>
-            <p style="font-size: 13px;">Crocante por fora e fofinha por dentro</p>
-          </div>
-          <div class="box-20">
-            <p style="font-size: 14px">R$ 19,99</p>
+            <p style="font-size: 14px">{{ aperitivo.preco }}</p>
           </div>
         </div>
       </a>
     </div>
   </div>
+  
 </main>
 <app-footer></app-footer>

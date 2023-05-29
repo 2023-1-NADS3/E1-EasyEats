@@ -6,12 +6,6 @@ const sqlite3 = require("sqlite3").verbose();
 const DBPATH = (require = "db_EasyEats.db");
 var db = new sqlite3.Database(DBPATH); //Abre o banco
 
-//Variaveis locais:
-let email = "Sem E-mail";
-let telefone = 11900000000;
-let nome = "Sem Nome";
-let senha = "Sem Senha";
-let local = "Sem Local";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,10 +20,10 @@ app.post("/cadastroUser", function (req, res) {
   console.log(req.body);
   console.log("Recebi um dado");
 
-  nome = req.body.nome;
-  senha = req.body.senha;
-  email = req.body.email;
-  telefone = parseInt(req.body.telefone);
+  let nome = req.body.nome;
+  let senha = req.body.senha;
+  let email = req.body.email;
+  let telefone = parseInt(req.body.telefone);
 
   let sql = `SELECT * FROM Usuarios WHERE email="${email}"`;
   db.all(sql, [], (err, rows) => {
@@ -61,8 +55,8 @@ app.get("/login", function (req, res) {
   console.log(req.body);
   console.log("Realizando login");
 
-  email = req.query.email;
-  senha = req.query.senha;
+  let email = req.query.email;
+  let senha = req.query.senha;
 
   let sql = `SELECT * FROM Usuarios WHERE email = "${email}"`;
 
@@ -77,7 +71,7 @@ app.get("/login", function (req, res) {
       console.log("Usuário encontrado.");
       if (senha === rows[0].senha) {
         console.log("Senha correta.");
-        res.send("Login realizado com sucesso!");
+        res.send(rows);
         telefone = rows[0].telefone;
         nome = rows[0].nome;
       } else {
@@ -88,6 +82,24 @@ app.get("/login", function (req, res) {
   });
 });
 // Fim Login
+
+app.post("/dados_usuario", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Estou pegando os dados do usuário.");
+  console.log(req.body);
+  let emailCheck = req.body.email;
+  console.log(emailCheck);
+
+  db.all(`SELECT * FROM Usuarios WHERE email="${emailCheck}"`, [], (err, rows) => {
+    if (err) {
+      console.log("Deu errinho na att");
+      res.send(err);
+    }
+    console.log("Acesse-os em: /dados_usuario");
+    console.log(rows);
+    res.send(rows);
+  });
+});
 
 // Inicio Json
 app.get("/todosUsers", function (req, res) {
@@ -112,6 +124,8 @@ app.post("/adicionaItem", function (req, res) {
 
   let item = req.body.item;
   let preco = req.body.preco;
+  let nome = req.body.nome;
+  let email = req.body.email;
 
   sql = `INSERT INTO Item (item, preco, nome, email) VALUES ("${item}", "${preco}", "${nome}", "${email}")`;
   db.all(sql, [], (err, rows) => {
@@ -120,7 +134,7 @@ app.post("/adicionaItem", function (req, res) {
       res.send(err);
     } else {
       console.log("Item adicionado!");
-      res.send("Item Atualiazado");
+      res.send("Item Atualizado");
     }
   });
 });
@@ -130,6 +144,7 @@ app.post("/adicionaItem", function (req, res) {
 app.get("/carrinhoUser", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   console.log("Tentei pegar os Itens de um usuário");
+  let email = req.body.email;
   db.all(`SELECT * FROM Item WHERE email="${email}"`, [], (err, rows) => {
     if (err) {
       console.log("Deu errinho para puxar esses Itens.");
@@ -175,6 +190,60 @@ app.post("/deleteItem", function (req, res) {
 });
 // Fim Delete 
 
+// inicio Altera usuário
+
+app.post("/alterar_dados_usuario", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Recebi um dado");
+  console.log(req.body);
+
+  let emailNovo = req.body.email;
+  let nomeNovo = req.body.nome;
+  let senhaNova = req.body.senha;
+  let telefoneNovo = parseInt(req.body.telefone);
+  let usuarioId = req.body.id;
+
+  console.log("Usuario acionado com id: " + usuarioId);
+  sql = `UPDATE Usuarios SET nome="${nomeNovo}", senha="${senhaNova}", email="${emailNovo}", telefone="${telefoneNovo}" WHERE id="${usuarioId}"`;
+  db.all(sql, [], (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.send(err);
+    } else {
+      console.log("Usuário atualizado!");
+      sql = `SELECT FROM Usuarios WHERE email="${emailNovo}"`;
+      db.all(sql, [], (err, rows) => {
+        res.send(rows);
+      });
+    }
+  });
+});
+
+// Fim Altera usuário
+
+// Inicio delete Usuário
+
+app.post("/delete_usuario", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Recebi um dado");
+  console.log(req.body);
+  let usuarioId = req.body.id; // Assume que o ID do usuário está na coluna "id"
+  sql = `DELETE FROM Usuarios WHERE id="${usuarioId}"`;
+  db.all(sql, [], (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.send(err);
+    } else {
+      console.log("Usuário deletado PARA SEMPRE");
+      res.send("Usuário deletado PARA SEMPRE!");
+    }
+  });
+});
+
+// Fim delete Usuário
+
 app.listen(port, () => {
   console.log(`EasyEats na portinha: ${port}`);
 });
+
+
