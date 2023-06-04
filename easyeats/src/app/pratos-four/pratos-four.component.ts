@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class PratosFourComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Risoto de Camarão'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Camarão'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Feijuca Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Arroz, feijuca, farofine e os matinho verde'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/pastas/4.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '49,00'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class PratosFourComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Risoto de Camarão";
-    let preco = "R$ 32,99";
+    let item = "Feijuca Eats";
+    let preco = "R$ 49,00";
 
     $.post(
       'http://localhost:3000/adicionaItem',

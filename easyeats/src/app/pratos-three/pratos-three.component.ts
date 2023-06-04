@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class PratosThreeComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Strogonoff'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Estro go nofe'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'OmelEats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Arroz, feijão, ovo e batata frita'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/pratos/3.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '32,23'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class PratosThreeComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Strogonoff";
-    let preco = "R$ 32,99";
+    let item = "OmelEats";
+    let preco = "R$ 32,23";
 
     $.post(
       'http://localhost:3000/adicionaItem',

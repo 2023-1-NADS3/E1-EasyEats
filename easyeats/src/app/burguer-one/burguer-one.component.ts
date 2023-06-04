@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class BurguerOneComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'X-tudão'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Dois Hamburgures, alface, queijo, molho especial, cebola, picles e um pão com gergilim'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Capão Redondo Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Hamburguer, bacon, cebola, maionese e pão né'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/hamburguer/1.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '81,67'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class BurguerOneComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "X-Tudo";
-    let preco = "R$ 32,99";
+    let item = "Capão Redondo Eats";
+    let preco = "R$ 81,67";
 
     $.post(
       'http://localhost:3000/adicionaItem',

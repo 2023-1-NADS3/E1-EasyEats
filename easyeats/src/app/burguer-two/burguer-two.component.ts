@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class BurguerTwoComponent {
   constructor(private http: HttpClient, private router: Router) {
-    this.titulo = 'X-Salada'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Alface, '; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Vila Inglesa Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Pão Inglês, hambúrguer inglês, maionese inglesa, triguilho inglês'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/hamburguer/2.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '28,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '85,12'; // Inicialização da propriedade 'preco' no construtor
   }
 
 
@@ -25,8 +25,8 @@ export class BurguerTwoComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "X-Salada";
-    let preco = "R$ 28,99";
+    let item = "Vila Inglesa Eats";
+    let preco = "R$ 85,12";
 
     $.post(
       'http://localhost:3000/adicionaItem',

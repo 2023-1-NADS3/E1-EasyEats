@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 export class PratosFiveComponent {
   constructor(private http: HttpClient, private router: Router) {
     this.titulo = 'Galinhada'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Na verdade não sabemos se é frango ou galinha'; // Inicialização da propriedade 'descricao' no construtor
+    this.descricao = 'Bifão, arroz, feijão preto, saladine e batata frita'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/pasta/5.png'; // Inicialização da propriedade 'img' no construtor
     this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
   }

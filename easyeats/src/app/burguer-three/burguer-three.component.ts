@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class BurguerThreeComponent {
   constructor(private http: HttpClient, private router: Router) {
-    this.titulo = 'X-Maionese'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Duas Maioneses'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Jardim Fontalis Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Pão francês mesmo, alface do jardim, queijo da padaria do cezinha e maionese do Pão de Mel'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/hamburguer/3.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,10'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '64,40'; // Inicialização da propriedade 'preco' no construtor
   }
 
 
@@ -25,8 +25,8 @@ export class BurguerThreeComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "X-Maionese";
-    let preco = "R$ 32,10";
+    let item = "Jardim Fontalis Eats";
+    let preco = "R$ 64,40";
 
     $.post(
       'http://localhost:3000/adicionaItem',

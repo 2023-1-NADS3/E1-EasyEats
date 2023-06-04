@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class SobremesaTwoComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Sobremesa 2'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Sobremesa'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Torta de MorangEats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Morango, creme, e torta (Fatia)'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/sobremesas/2.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '60,99'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class SobremesaTwoComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Sobremesa 2";
-    let preco = "R$ 32,99";
+    let item = "Torta de MorangEats";
+    let preco = "R$ 60,99";
 
     $.post(
       'http://localhost:3000/adicionaItem',

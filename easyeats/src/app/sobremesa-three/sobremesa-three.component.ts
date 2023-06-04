@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class SobremesaThreeComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Sobremesa 3'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Sobremesa'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Palha Italiana Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Bolacha de Maizena, brigadeiro, e açucar refinade'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/sobremesas/3.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '18,42'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class SobremesaThreeComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Sobremesa 3";
-    let preco = "R$ 32,99";
+    let item = "Palha Italiana Eats";
+    let preco = "R$ 18,42";
 
     $.post(
       'http://localhost:3000/adicionaItem',

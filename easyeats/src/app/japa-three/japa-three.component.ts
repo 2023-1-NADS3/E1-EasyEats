@@ -10,10 +10,10 @@ import * as $ from 'jquery';
 })
 export class JapaThreeComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Japa 3'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Japa ué'; // Inicialização da propriedade 'descricao' no construtor
+    this.titulo = 'Hot roll Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Salame, alga, arroz, creme de queijo e empanado'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/japa/3.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '27,89'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class JapaThreeComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Japa 3";
-    let preco = "R$ 32,99";
+    let item = "Hot roll Eats";
+    let preco = "R$ 27,89";
 
     $.post(
       'http://localhost:3000/adicionaItem',

@@ -11,9 +11,9 @@ import * as $ from 'jquery';
 export class PratosOneComponent {
   constructor(private  http: HttpClient, private router: Router) {
     this.titulo = 'Macarrão com Requeijão'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Macarrão e Requeijão'; // Inicialização da propriedade 'descricao' no construtor
+    this.descricao = 'Sal mão na brasa da AirFrier'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/pratos/1.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '32,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '112,10'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +25,8 @@ export class PratosOneComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Macarrão com Requeijão";
-    let preco = "R$ 32,99";
+    let item = "Sal mão na brasa da AirFrier";
+    let preco = "R$ 112,10";
 
     $.post(
       'http://localhost:3000/adicionaItem',

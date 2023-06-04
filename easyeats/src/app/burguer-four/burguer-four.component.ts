@@ -11,9 +11,9 @@ import * as $ from 'jquery';
 export class BurguerFourComponent {
   constructor(private  http: HttpClient, private router: Router) {
     this.titulo = 'X-Planta sem X'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Duas Plantas'; // Inicialização da propriedade 'descricao' no construtor
+    this.descricao = 'Pão de planta, carne de planta, queijo de planta'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/hamburguer/4.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '48,99'; // Inicialização da propriedade 'preco' no construtor
+    this.preco = '20,89'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -26,7 +26,7 @@ export class BurguerFourComponent {
     console.log("Função Acionada");
 
     let item = "X-Planta sem X";
-    let preco = "R$ 48,99";
+    let preco = "R$ 20,89";
 
     $.post(
       'http://localhost:3000/adicionaItem',

@@ -9,37 +9,37 @@ export class CardapioSobremesasComponent {
   burguers = [
     {
       imagem: '../../../assets/imagens/sobremesas/1.1.png',
-      nome: 'Sobremesa',
-      descricao: 'Dois hamburgueres, alface, queijo, molho especial, cebola, picles e um pão com gergilim',
-      preco: 'R$ 19,99',
+      nome: 'Pacumê de bombom Eats',
+      descricao: 'Bombonzine, leite, leite de creme e manteiga',
+      preco: 'R$ 60,99',
       link: '../sobremesaOne'
     },
     {
       imagem: '../../../assets/imagens/sobremesas/2.1.png',
-      nome: 'Sobremesa',
-      descricao: 'Salada ué',
-      preco: 'R$ 19,99',
+      nome: 'Torta de MorangEats',
+      descricao: 'Morango, creme, e torta (Fatia)',
+      preco: 'R$ 24,90',
       link: '../sobremesaTwo'
     },
     {
       imagem: '../../../assets/imagens/sobremesas/3.1.png',
-      nome: 'Sobremesa',
-      descricao: 'Pão e Maionese',
-      preco: 'R$ 19,99',
+      nome: 'Palha Italiana Eats',
+      descricao: 'Bolacha de Maizena, brigadeiro, e açucar refinade',
+      preco: 'R$ 18,42',
       link: '../sobremesaThree'
     },
     {
       imagem: '../../../assets/imagens/sobremesas/4.1.png',
-      nome: 'Sobremesa',
-      descricao: 'Pão de planta, carne de planta, queijo de planta',
-      preco: 'R$ 19,99',
+      nome: 'Bolo de milho',
+      descricao: 'Bolo e milho',
+      preco: 'R$ 13,18',
       link: '../sobremesaFour'
     },
     {
       imagem: '../../../assets/imagens/sobremesas/5.1.png',
-      nome: 'Sobremesa',
-      descricao: 'Jaca Australiano e pão de carne',
-      preco: 'R$ 19,99',
+      nome: 'Torta de cuzcuz',
+      descricao: 'Aí tem cuzcuz, tem ovo, tem cereja, tem chocolate branco, tem planta e tem frango',
+      preco: 'R$ 113,48',
       link: '../sobremesaFive'
     },
   ];

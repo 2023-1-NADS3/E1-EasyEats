@@ -55,6 +55,11 @@ import { CardapioPratosComponent } from './cardapio-pratos/cardapio-pratos.compo
 import { CardapioSobremesasComponent } from './cardapio-sobremesas/cardapio-sobremesas.component';
 import { CardapioJapaComponent } from './cardapio-japa/cardapio-japa.component';
 import { CardapioBebidaComponent } from './cardapio-bebida/cardapio-bebida.component';
+import { BebidaOneComponent } from './bebida-one/bebida-one.component';
+import { BebidaTwoComponent } from './bebida-two/bebida-two.component';
+import { BebidaThreeComponent } from './bebida-three/bebida-three.component';
+import { BebidaFourComponent } from './bebida-four/bebida-four.component';
+import { BebidaFiveComponent } from './bebida-five/bebida-five.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +107,12 @@ import { CardapioBebidaComponent } from './cardapio-bebida/cardapio-bebida.compo
     CardapioPratosComponent,
     CardapioSobremesasComponent,
     CardapioJapaComponent,
-    CardapioBebidaComponent
+    CardapioBebidaComponent,
+    BebidaOneComponent,
+    BebidaTwoComponent,
+    BebidaThreeComponent,
+    BebidaFourComponent,
+    BebidaFiveComponent
 
   ],
   imports: [

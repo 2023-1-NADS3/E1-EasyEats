@@ -2,18 +2,17 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
-
 @Component({
-  selector: 'app-pratos-two',
-  templateUrl: './pratos-two.component.html',
-  styleUrls: ['./pratos-two.component.css']
+  selector: 'app-bebida-three',
+  templateUrl: './bebida-three.component.html',
+  styleUrls: ['./bebida-three.component.css']
 })
-export class PratosTwoComponent {
+export class BebidaThreeComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Prato feito'; // Inicialização da propriedade 'titulo' no construtor
-    this.descricao = 'Arroz,Batata Rústica, umas plantas, carne né empanada e o queijo por cima'; // Inicialização da propriedade 'descricao' no construtor
-    this.img = '../../assets/imagens/pratos/2.png'; // Inicialização da propriedade 'img' no construtor
-    this.preco = '95,37'; // Inicialização da propriedade 'preco' no construtor
+    this.titulo = 'Chá de Romã Eats'; // Inicialização da propriedade 'titulo' no construtor
+    this.descricao = 'Suco de romã, planta e sal no copo'; // Inicialização da propriedade 'descricao' no construtor
+    this.img = '../../assets/imagens/bebidas/3.png'; // Inicialização da propriedade 'img' no construtor
+    this.preco = '64,07'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
@@ -25,8 +24,8 @@ export class PratosTwoComponent {
   adicionaComida() {
     console.log("Função Acionada");
 
-    let item = "Prato feito";
-    let preco = "R$ 95,37";
+    let item = "Chá de Romã Eats";
+    let preco = "R$ 64,07";
 
     $.post(
       'http://localhost:3000/adicionaItem',

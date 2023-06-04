@@ -43,6 +43,11 @@ import { CardapioJapaComponent } from './cardapio-japa/cardapio-japa.component';
 import { CardapioSobremesasComponent } from './cardapio-sobremesas/cardapio-sobremesas.component';
 import { CardapioPratosComponent } from './cardapio-pratos/cardapio-pratos.component';
 import { CardapioBebidaComponent } from './cardapio-bebida/cardapio-bebida.component';
+import { BebidaOneComponent } from './bebida-one/bebida-one.component';
+import { BebidaTwoComponent } from './bebida-two/bebida-two.component';
+import { BebidaThreeComponent } from './bebida-three/bebida-three.component';
+import { BebidaFourComponent } from './bebida-four/bebida-four.component';
+import { BebidaFiveComponent } from './bebida-five/bebida-five.component';
 
 const routes: Routes = [
 
@@ -73,11 +78,11 @@ const routes: Routes = [
   { path: 'sobremesaThree', component: SobremesaThreeComponent },
   { path: 'sobremesaFour', component: SobremesaFourComponent },
   { path: 'sobremesaFive', component: SobremesaFiveComponent },
-  { path: 'prato-one', component: PratosOneComponent },
-  { path: 'prato-two', component: PratosTwoComponent },
-  { path: 'prato-three', component: PratosThreeComponent },
-  { path: 'prato-four', component: PratosFourComponent },
-  { path: 'prato-five', component: PratosFiveComponent },
+  { path: 'pratoOne', component: PratosOneComponent },
+  { path: 'pratoTwo', component: PratosTwoComponent },
+  { path: 'pratoThree', component: PratosThreeComponent },
+  { path: 'pratoFour', component: PratosFourComponent },
+  { path: 'pratoFive', component: PratosFiveComponent },
   { path: 'japaOne', component: JapaOneComponent },
   { path: 'japaTwo', component: JapaTwoComponent },
   { path: 'japaThree', component: JapaThreeComponent },
@@ -87,6 +92,11 @@ const routes: Routes = [
   { path: 'cardapio-sobremesa', component: CardapioSobremesasComponent },
   { path: 'cardapio-prato', component: CardapioPratosComponent },
   { path: 'cardapio-bebida', component: CardapioBebidaComponent },
+  { path: 'bebidaOne', component: BebidaOneComponent },
+  { path: 'bebidaTwo', component: BebidaTwoComponent },
+  { path: 'bebidaThree', component: BebidaThreeComponent },
+  { path: 'bebidaFour', component: BebidaFourComponent },
+  { path: 'bebidaFive', component: BebidaFiveComponent }
   
   
 ];

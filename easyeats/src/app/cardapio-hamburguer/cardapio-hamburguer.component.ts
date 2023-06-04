@@ -11,37 +11,37 @@ export class CardapioHamburguerComponent {
   burguers = [
     {
       imagem: '../../../assets/imagens/hamburguer/1.1.png',
-      nome: 'X-Tudão',
+      nome: 'Capão Redondo Eats',
       descricao: 'Dois hamburgueres, alface, queijo, molho especial, cebola, picles e um pão com gergilim',
-      preco: 'R$ 19,99',
+      preco: 'R$ 81,67',
       link: '../burguerOne'
     },
     {
       imagem: '../../../assets/imagens/hamburguer/2.1.png',
-      nome: 'X-Salada',
-      descricao: 'Salada ué',
-      preco: 'R$ 19,99',
+      nome: 'Vila Inglesa Eats',
+      descricao: 'Pão Inglês, hambúrguer inglês, maionese inglesa, triguilho inglês',
+      preco: 'R$ 85,12',
       link: '../burguerTwo'
     },
     {
       imagem: '../../../assets/imagens/hamburguer/3.1.png',
-      nome: 'X-Maionese',
-      descricao: 'Pão e Maionese',
-      preco: 'R$ 19,99',
+      nome: 'Jardim Fontalis Eats',
+      descricao: 'Pão francês mesmo, alface do jardim, queijo da padaria do cezinha e maionese do Pão de Mel',
+      preco: 'R$ 64,40',
       link: '../burguerThree'
     },
     {
       imagem: '../../../assets/imagens/hamburguer/4.1.png',
       nome: 'X-Planta sem X',
       descricao: 'Pão de planta, carne de planta, queijo de planta',
-      preco: 'R$ 19,99',
+      preco: 'R$ 20,89',
       link: '../burguerFour'
     },
     {
       imagem: '../../../assets/imagens/hamburguer/5.1.png',
       nome: 'X-Jaca',
-      descricao: 'Jaca Australiano e pão de carne',
-      preco: 'R$ 19,99',
+      descricao: 'Pão, maionese, queijo, presunto, salame, quibe e alface vegano.',
+      preco: 'R$ 17,17',
       link: '../burguerFive'
     },
   ];
