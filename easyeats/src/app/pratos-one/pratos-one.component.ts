@@ -10,14 +10,20 @@ import * as $ from 'jquery';
 })
 export class PratosOneComponent {
   constructor(private  http: HttpClient, private router: Router) {
-    this.titulo = 'Macarrão com Requeijão'; // Inicialização da propriedade 'titulo' no construtor
+    this.titulo = 'Salmão Eats'; // Inicialização da propriedade 'titulo' no construtor
     this.descricao = 'Sal mão na brasa da AirFrier'; // Inicialização da propriedade 'descricao' no construtor
     this.img = '../../assets/imagens/pratos/1.png'; // Inicialização da propriedade 'img' no construtor
     this.preco = '112,10'; // Inicialização da propriedade 'preco' no construtor
   }
 
   
-  titulo: string; // Declaração da propriedade 'titulo' sem inicialização
+   nome = localStorage.getItem('nome');
+  email = localStorage.getItem('email');
+  telefone = localStorage.getItem('telefone');
+  senha = localStorage.getItem('senha');
+  id = localStorage.getItem('id');
+
+ titulo: string; // Declaração da propriedade 'titulo' sem inicialização
   descricao: string; // Declaração da propriedade 'descrição' sem inicialização
   img: string; // Declaração da propriedade 'img' sem inicialização
   preco: string; // Declaração da propriedade 'preço' sem inicialização
@@ -32,7 +38,9 @@ export class PratosOneComponent {
       'http://localhost:3000/adicionaItem',
       {
         "item": item,
-        "preco": preco 
+        "preco": preco,
+        "nome": this.nome,
+        "email": this.email
       },
       (res) => {
         console.log('Enviei o Json do Item');

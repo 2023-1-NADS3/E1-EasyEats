@@ -95,3 +95,8 @@ a{
   font-family: 'Sora', sans-serif;
   opacity: 0.6;
 }
+
+
+.inputs input{
+  padding: 4px 15px;
+}

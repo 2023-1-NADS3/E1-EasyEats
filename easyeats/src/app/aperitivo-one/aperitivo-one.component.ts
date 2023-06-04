@@ -15,9 +15,14 @@ export class AperitivoOneComponent {
     this.img = '../../assets/imagens/aperitivos/1.png'; // Inicialização da propriedade 'img' no construtor
     this.preco = '8,99'; // Inicialização da propriedade 'preco' no construtor
   }
-
   
-  titulo: string; // Declaração da propriedade 'titulo' sem inicialização
+   nome = localStorage.getItem('nome');
+  email = localStorage.getItem('email');
+  telefone = localStorage.getItem('telefone');
+  senha = localStorage.getItem('senha');
+  id = localStorage.getItem('id');
+
+ titulo: string; // Declaração da propriedade 'titulo' sem inicialização
   descricao: string; // Declaração da propriedade 'descrição' sem inicialização
   img: string; // Declaração da propriedade 'img' sem inicialização
   preco: string; // Declaração da propriedade 'preço' sem inicialização
@@ -32,7 +37,9 @@ export class AperitivoOneComponent {
       'http://localhost:3000/adicionaItem',
       {
         "item": item,
-        "preco": preco 
+        "preco": preco,
+        "nome": this.nome,
+        "email": this.email
       },
       (res) => {
         console.log('Enviei o Json do Item');

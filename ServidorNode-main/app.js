@@ -124,10 +124,10 @@ app.post("/adicionaItem", function (req, res) {
 
   let item = req.body.item;
   let preco = req.body.preco;
-  let nome = req.body.nome;
-  let email = req.body.email;
+  let nomeReq = req.body.nome;
+  let emailReq = req.body.email;
 
-  sql = `INSERT INTO Item (item, preco, nome, email) VALUES ("${item}", "${preco}", "${nome}", "${email}")`;
+  sql = `INSERT INTO Item (item, preco, nome, email) VALUES ("${item}", "${preco}", "${nomeReq}", "${emailReq}")`;
   db.all(sql, [], (err, rows) => {
     if (err) {
       console.log(err);
@@ -141,21 +141,38 @@ app.post("/adicionaItem", function (req, res) {
 // Fim adiciona o Item
 
 // Inicio Json Carrinho
-app.get("/carrinhoUser", function (req, res) {
+app.post("/carrinhoUser", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
-  console.log("Tentei pegar os Itens de um usuário");
-  let email = req.body.email;
-  db.all(`SELECT * FROM Item WHERE email="${email}"`, [], (err, rows) => {
+  console.log("Recebi um email");
+  let emailCheck = req.body.email;
+  console.log(req.body.email);
+  db.all(`SELECT * FROM Item WHERE email="${emailCheck}"`, [], (err, rows) => {
     if (err) {
       console.log("Deu errinho para puxar esses Itens.");
       res.send(err);
     }
     console.log("Peguei os Itens de um usuário.");
+    console.log(rows);
     res.send(rows);
   });
 });
 // Fim Json Carrinho
 
+app.post("/cozinhaUser", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Recebi um email");
+  let emailCheck = req.body.email;
+  console.log(req.body.email);
+  db.all(`SELECT * FROM Cozinha WHERE email="${emailCheck}"`, [], (err, rows) => {
+    if (err) {
+      console.log("Deu errinho para puxar esses Itens.");
+      res.send(err);
+    }
+    console.log("Peguei os Itens de um usuário.");
+    console.log(rows);
+    res.send(rows);
+  });
+});
 
 app.get("/todosItens", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -170,6 +187,41 @@ app.get("/todosItens", function (req, res) {
   });
 });
 
+app.get("/cozinha", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Atualizei os Itens");
+  db.all(`SELECT * FROM Cozinha`, [], (err, rows) => {
+    if (err) {
+      console.log("Deu errinho na att");
+      res.send(err);
+    }
+    console.log("Acesse-os em: /cozinha");
+    res.send(rows);
+  });
+});
+
+app.post("/cadastroCozinha", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Recebi um dado");
+  console.log(req.body);
+
+  let item = req.body.item;
+  let preco = req.body.preco;
+  let nomeReq = req.body.nome;
+  let emailReq = req.body.email;
+
+  sql = `INSERT INTO Cozinha(item, preco, nome, email) VALUES ("${item}", "${preco}", "${nomeReq}", "${emailReq}")`;
+  db.all(sql, [], (err, rows) => {
+    if (err) {
+      console.log(err);
+      res.send(err);
+    } else {
+      console.log("Item adicionado!");
+      res.send(rows);
+    }
+  });
+});
+
 // Inicio Delete
 app.post("/deleteItem", function (req, res) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -178,6 +230,26 @@ app.post("/deleteItem", function (req, res) {
   let itemId = parseInt(req.body.itemId)
 
   db.all(`DELETE FROM Item WHERE itemId = ${itemId}`, [], (err, rows) => {
+    if (err) {
+      console.log("Deu errinho na att");
+      res.send(err);
+    }
+    else{
+    console.log(`O post a seguir foi deletado: "${rows}"`);
+    res.send(rows);
+    }
+  });
+});
+// Fim Delete 
+
+// Inicio Delete
+app.post("/deleteItemCozinha", function (req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+  console.log("Recebi alguma coisa");
+
+  let itemId = parseInt(req.body.itemId)
+
+  db.all(`DELETE FROM Cozinha WHERE itemId = ${itemId}`, [], (err, rows) => {
     if (err) {
       console.log("Deu errinho na att");
       res.send(err);
@@ -211,8 +283,10 @@ app.post("/alterar_dados_usuario", function (req, res) {
       res.send(err);
     } else {
       console.log("Usuário atualizado!");
-      sql = `SELECT FROM Usuarios WHERE email="${emailNovo}"`;
+      sql = `SELECT * FROM Usuarios WHERE ID="${usuarioId}"`;
+      console.log("Puxando os dados com o id: "+ usuarioId);
       db.all(sql, [], (err, rows) => {
+        console.log(rows);
         res.send(rows);
       });
     }

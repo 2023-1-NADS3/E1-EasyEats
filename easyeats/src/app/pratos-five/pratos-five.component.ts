@@ -17,7 +17,13 @@ export class PratosFiveComponent {
   }
 
 
-  titulo: string; // Declaração da propriedade 'titulo' sem inicialização
+   nome = localStorage.getItem('nome');
+  email = localStorage.getItem('email');
+  telefone = localStorage.getItem('telefone');
+  senha = localStorage.getItem('senha');
+  id = localStorage.getItem('id');
+
+ titulo: string; // Declaração da propriedade 'titulo' sem inicialização
   descricao: string; // Declaração da propriedade 'descrição' sem inicialização
   img: string; // Declaração da propriedade 'img' sem inicialização
   preco: string; // Declaração da propriedade 'preço' sem inicialização
@@ -32,7 +38,9 @@ export class PratosFiveComponent {
       'http://localhost:3000/adicionaItem',
       {
         "item": item,
-        "preco": preco
+        "preco": preco,
+        "nome": this.nome,
+        "email": this.email
       },
       (res) => {
         console.log('Enviei o Json do Item');

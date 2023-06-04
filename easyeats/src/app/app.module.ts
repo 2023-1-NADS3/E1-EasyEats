@@ -60,6 +60,8 @@ import { BebidaTwoComponent } from './bebida-two/bebida-two.component';
 import { BebidaThreeComponent } from './bebida-three/bebida-three.component';
 import { BebidaFourComponent } from './bebida-four/bebida-four.component';
 import { BebidaFiveComponent } from './bebida-five/bebida-five.component';
+import { CozinhaComponent } from './cozinha/cozinha.component';
+import { AcompanharPedidosComponent } from './acompanhar-pedidos/acompanhar-pedidos.component';
 
 @NgModule({
   declarations: [
@@ -112,7 +114,9 @@ import { BebidaFiveComponent } from './bebida-five/bebida-five.component';
     BebidaTwoComponent,
     BebidaThreeComponent,
     BebidaFourComponent,
-    BebidaFiveComponent
+    BebidaFiveComponent,
+    CozinhaComponent,
+    AcompanharPedidosComponent
 
   ],
   imports: [

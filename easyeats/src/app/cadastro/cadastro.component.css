@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap');
 
 
-.div-title{
+.div-title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title-login{
+.title-login {
   font-family: 'Sora', sans-serif;
   color: #FFF6D4;
   font-size: 40px;
   margin-top: 30px;
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 
-.box-login{
+.box-login {
   width: 300px;
-  height: 500px;
+  height: 550px;
   background-color: #7C002E;
   display: flex;
   flex-direction: column;
@@ -32,7 +32,7 @@
   margin-top: 20px;
 }
 
-.inputs{
+.inputs {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -53,7 +53,7 @@ input {
   justify-content: center;
 }
 
-button{
+button {
   width: 150px;
   height: 30px;
   background-color: #FFF6D4;
@@ -67,7 +67,7 @@ button{
   margin-top: 15px;
 }
 
-a{
+a {
   font-family: 'Sora', sans-serif;
   text-decoration: none;
   color: #fff;
@@ -82,7 +82,7 @@ a{
   margin-top: 50px;
 }
 
-.rodape{
+.rodape {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,9 +90,13 @@ a{
   gap: 5px;
 }
 
-.pji{
+.pji {
   color: #F8E9B7;
   align-self: center;
   font-family: 'Sora', sans-serif;
   opacity: 0.6;
+}
+
+.inputs input {
+  padding: 4px 15px;
 }

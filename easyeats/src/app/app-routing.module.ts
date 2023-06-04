@@ -48,6 +48,8 @@ import { BebidaTwoComponent } from './bebida-two/bebida-two.component';
 import { BebidaThreeComponent } from './bebida-three/bebida-three.component';
 import { BebidaFourComponent } from './bebida-four/bebida-four.component';
 import { BebidaFiveComponent } from './bebida-five/bebida-five.component';
+import { AcompanharPedidosComponent } from './acompanhar-pedidos/acompanhar-pedidos.component';
+import { CozinhaComponent } from './cozinha/cozinha.component';
 
 const routes: Routes = [
 
@@ -96,8 +98,9 @@ const routes: Routes = [
   { path: 'bebidaTwo', component: BebidaTwoComponent },
   { path: 'bebidaThree', component: BebidaThreeComponent },
   { path: 'bebidaFour', component: BebidaFourComponent },
-  { path: 'bebidaFive', component: BebidaFiveComponent }
-  
+  { path: 'bebidaFive', component: BebidaFiveComponent },
+  { path: 'acompanhar-pedidos', component: AcompanharPedidosComponent},
+  { path: 'cozinha', component: CozinhaComponent}
   
 ];
 

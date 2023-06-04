@@ -30,7 +30,7 @@ export class LoginComponent {
         console.log('Passei no segundo ponto do login');
         this.Dados(email);
         if (res[0].senha === senha) {
-          this.router.navigate(['/cardapio']);
+        this.router.navigate(['/favoritos']);
         } else if (res === 'Usuário não encontrado.') {
           alert('Usuário não encontrado.');
         } else {
