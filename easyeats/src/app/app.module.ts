@@ -31,6 +31,30 @@ import { CardapioHamburguerComponent } from './cardapio-hamburguer/cardapio-hamb
 import { PerfilComponent } from './perfil/perfil.component';
 import { AlteraDadosComponent } from './altera-dados/altera-dados.component';
 import { DeletaContaComponent } from './deleta-conta/deleta-conta.component';
+import { AperitivoOneComponent } from './aperitivo-one/aperitivo-one.component';
+import { AperitivoTwoComponent } from './aperitivo-two/aperitivo-two.component';
+import { AperitivoThreeComponent } from './aperitivo-three/aperitivo-three.component';
+import { AperitivoFourComponent } from './aperitivo-four/aperitivo-four.component';
+import { AperitivoFiveComponent } from './aperitivo-five/aperitivo-five.component';
+import { PratosOneComponent } from './pratos-one/pratos-one.component';
+import { PratosTwoComponent } from './pratos-two/pratos-two.component';
+import { PratosThreeComponent } from './pratos-three/pratos-three.component';
+import { PratosFourComponent } from './pratos-four/pratos-four.component';
+import { PratosFiveComponent } from './pratos-five/pratos-five.component';
+import { SobremesaOneComponent } from './sobremesa-one/sobremesa-one.component';
+import { SobremesaTwoComponent } from './sobremesa-two/sobremesa-two.component';
+import { SobremesaThreeComponent } from './sobremesa-three/sobremesa-three.component';
+import { SobremesaFourComponent } from './sobremesa-four/sobremesa-four.component';
+import { SobremesaFiveComponent } from './sobremesa-five/sobremesa-five.component';
+import { JapaOneComponent } from './japa-one/japa-one.component';
+import { JapaTwoComponent } from './japa-two/japa-two.component';
+import { JapaThreeComponent } from './japa-three/japa-three.component';
+import { JapaFourComponent } from './japa-four/japa-four.component';
+import { JapaFiveComponent } from './japa-five/japa-five.component';
+import { CardapioPratosComponent } from './cardapio-pratos/cardapio-pratos.component';
+import { CardapioSobremesasComponent } from './cardapio-sobremesas/cardapio-sobremesas.component';
+import { CardapioJapaComponent } from './cardapio-japa/cardapio-japa.component';
+import { CardapioBebidaComponent } from './cardapio-bebida/cardapio-bebida.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +78,31 @@ import { DeletaContaComponent } from './deleta-conta/deleta-conta.component';
     CardapioHamburguerComponent,
     PerfilComponent,
     AlteraDadosComponent,
-    DeletaContaComponent
+    DeletaContaComponent,
+    AperitivoOneComponent,
+    AperitivoTwoComponent,
+    AperitivoThreeComponent,
+    AperitivoFourComponent,
+    AperitivoFiveComponent,
+    PratosOneComponent,
+    PratosTwoComponent,
+    PratosThreeComponent,
+    PratosFourComponent,
+    PratosFiveComponent,
+    SobremesaOneComponent,
+    SobremesaTwoComponent,
+    SobremesaThreeComponent,
+    SobremesaFourComponent,
+    SobremesaFiveComponent,
+    JapaOneComponent,
+    JapaTwoComponent,
+    JapaThreeComponent,
+    JapaFourComponent,
+    JapaFiveComponent,
+    CardapioPratosComponent,
+    CardapioSobremesasComponent,
+    CardapioJapaComponent,
+    CardapioBebidaComponent
 
   ],
   imports: [

@@ -20,39 +20,39 @@ export class ListarAperitivosComponent {
 
   aperitivos = [
     {
-      imagem: '../../../assets/imagens/aperitivos/batata.png',
-      nome: 'Porção de Fritas',
-      descricao: 'Crocante por fora e fofinha por dentro',
-      preco: 'R$ 19,99',
-      link: '../porcao-de-fritas'
+      imagem: '../../../assets/imagens/aperitivos/1-1.png',
+      nome: 'Joelho Eats',
+      descricao: 'Joelho mas não é de verdade',
+      preco: 'R$ 8,99',
+      link: '../aperitivo-one'
     },
     {
-      imagem: '../../../assets/imagens/aperitivos/bolin.png',
-      nome: 'Porção Bolinho',
-      descricao: 'Crocante por fora e fofinha por dentro',
-      preco: 'R$ 19,99',
-      link: '../porcao-bolinho'
+      imagem: '../../../assets/imagens/aperitivos/2-1.png',
+      nome: 'Entradine Eats',
+      descricao: 'Pão e uns negócios',
+      preco: 'R$ 10,86',
+      link: '../aperitivo-two'
     },
     {
-      imagem: '../../../assets/imagens/aperitivos/coxinha.png',
-      nome: 'Porção de Coxinha',
-      descricao: 'Crocante por fora e fofinha por dentro',
-      preco: 'R$ 19,99',
-      link: '../porcao-coxinha'
+      imagem: '../../../assets/imagens/aperitivos/3-1.png',
+      nome: 'SalamEats',
+      descricao: 'Salame e uns negócios',
+      preco: 'R$ 13,13',
+      link: '../aperitivo-three'
     },
     {
-      imagem: '../../../assets/imagens/aperitivos/frnaguinho.png',
-      nome: 'Porção Franguin',
-      descricao: 'Crocante por fora e fofinha por dentro',
-      preco: 'R$ 19,99',
-      link: '../porcao-franguinho'
+      imagem: '../../../assets/imagens/aperitivos/4-1.png',
+      nome: 'Bolim de Eats',
+      descricao: 'Bolinho e queijo (Unidade)',
+      preco: 'R$ 4,20',
+      link: '../aperitivo-four'
     },
     {
-      imagem: '../../../assets/imagens/aperitivos/onion.png',
-      nome: 'Porção Onion Rings',
-      descricao: 'Crocante por fora e fofinha por dentro',
-      preco: 'R$ 19,99',
-      link: '../porcao-onion'
+      imagem: '../../../assets/imagens/aperitivos/5-1.png',
+      nome: 'Kibe Eats',
+      descricao: 'Pouca carne e muito trigo de quibe',
+      preco: 'R$ 5,93',
+      link: '../aperitivo-five'
     },
   ];
 

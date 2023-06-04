@@ -9,14 +9,13 @@ import * as $ from 'jquery';
   styleUrls: ['./fritas.component.css'],
 })
 export class FritasComponent {
-  constructor(private  http: HttpClient, private router: Router) {
+  constructor(private http: HttpClient, private router: Router) {
     this.titulo = 'Batata Frita'; // Inicialização da propriedade 'titulo' no construtor
     this.descricao = 'Batata Fresquinha, cheddar, bacon e maionese da casa'; // Inicialização da propriedade 'descricao' no construtor
-    this.img = '../../assets/imagens/img-teste.png'; // Inicialização da propriedade 'img' no construtor
+    this.img = '../../assets/imagens/aperitivos/1.png'; // Inicialização da propriedade 'img' no construtor
     this.preco = '19,99'; // Inicialização da propriedade 'preco' no construtor
   }
 
-  
   titulo: string; // Declaração da propriedade 'titulo' sem inicialização
   descricao: string; // Declaração da propriedade 'descrição' sem inicialização
   img: string; // Declaração da propriedade 'img' sem inicialização
@@ -26,13 +25,13 @@ export class FritasComponent {
     console.log("Função Acionada");
 
     let item = "Porção de Fritas";
-    let preco = "R$19,99";
+    let preco = "R$ 19,99";
 
     $.post(
       'http://localhost:3000/adicionaItem',
       {
         "item": item,
-        "preco": preco 
+        "preco": preco
       },
       (res) => {
         console.log('Enviei o Json do Item');
@@ -41,7 +40,7 @@ export class FritasComponent {
           this.router.navigate(['/carrinho']);
         } else {
           alert('Erro no Banco, Refaça o Login.');
-        } 
+        }
       }
     );
   }
