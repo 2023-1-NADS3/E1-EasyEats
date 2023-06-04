@@ -32,14 +32,14 @@ export class CardapioHamburguerComponent {
     },
     {
       imagem: '../../../assets/imagens/hamburguer/4.1.png',
-      nome: 'X-Planta sem X',
+      nome: 'Itaqua Eats',
       descricao: 'Pão de planta, carne de planta, queijo de planta',
       preco: 'R$ 20,89',
       link: '../burguerFour'
     },
     {
       imagem: '../../../assets/imagens/hamburguer/5.1.png',
-      nome: 'X-Jaca',
+      nome: 'Carapicuiba Eats',
       descricao: 'Pão, maionese, queijo, presunto, salame, quibe e alface vegano.',
       preco: 'R$ 17,17',
       link: '../burguerFive'
