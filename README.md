@@ -65,8 +65,9 @@ Há também 3 pastas que seguem da seguinte forma:
 Para abrir este projeto, você necessita das seguintes ferramentas:
 
 -<b>Angular Freamework</b>
+<br>
 -<b>Node</b>
-
+<br>
 Primeiro faça download do node no seguinte site:
 https://nodejs.org/en/download
 
@@ -79,9 +80,13 @@ npm install -g @angular/cli
 
 Para poder rodar este projeto, você necessita seguir os seguintes passos:
 
+<br>
+
 -<b>Clone o repositório.</b>
 
 -<b>Entre na pasta raiz.</b>
+
+<br>
 
 -<b>Entre na pasta: ServidorNode-main</b>
 ```sh
@@ -92,7 +97,7 @@ cd ServidorNode-main
 ```sh
 node app.js
 ```
-
+<br><br>
 Agora, entre na pasta easyeats.
 ```sh
 cd easyeats
