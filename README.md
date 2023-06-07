@@ -34,32 +34,30 @@ Por isso, criamos um aplicativo web mobile que melhora o atendimento em restaura
 
 -Raiz<br>
 |<br>
-|-->documentos<br>
-  &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
-|-->imagens<br>
-|-->src<br>
-  &emsp;|-->Backend<br>
-  &emsp;|-->Frontend<br>
+|-->ServidorNode-main<br>
+  &emsp;|-->DB SQLite<br>
+|-->_Docs<br>
+  &emsp;|-->Breno Barbosa<br>
+  &emsp;|-->Caique Matos<br>
+  &emsp;|-->Esdras Mendes<br>
+  &emsp;|-->Thaina Beatriz<br>
+  &emsp;|-->_Geral<br>
+  &emsp;&emsp;|-->Qualidade de Software e Teste de Componentes<br>
+  &emsp;&emsp;|-->User Experience<br>
+|-->easyeats<br>
+  &emsp;|-->Frontend Angular<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
 Há também 4 pastas que seguem da seguinte forma:
 
-<b>documentos</b>: Toda a documentação estará nesta pasta.
+<b>ServidorNode-main</b>: Toda a estrutura do banco de dados e do node está nesta pasta.
 
-<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
+<b>_Docs</b>: Todos os documentos relacionados ao projeto está nesta pasta.
 
-<b>imagens</b>: Imagens do sistema
-
-<b>src</b>: Pasta que contém o código fonte.
+<b>easyeats</b>: A estrutura do frontend está nesta pasta.
 
 ## 🛠 Instalação
 
