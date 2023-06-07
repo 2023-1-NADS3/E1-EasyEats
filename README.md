@@ -59,21 +59,56 @@ Há também 3 pastas que seguem da seguinte forma:
 
 <b>easyeats</b>: A estrutura do frontend está nesta pasta.
 
-## 🛠 Instalação
 
-## 💻 Configuração para Desenvolvimento
+## 🛠 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+Para abrir este projeto, você necessita das seguintes ferramentas:
 
-Para abrir este projeto você necessita das seguintes ferramentas:
+-<b>Angular Freamework</b>
+-<b>Node</b>
 
--<a href="https://godotengine.org/download">GODOT</a>
+Primeiro faça download do node no seguinte site:
+https://nodejs.org/en/download
 
+Logo em seguida instale o Angular:
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+npm install -g @angular/cli
 ```
+
+## 💻 Como rodar o projeto?
+
+Para poder rodar este projeto, você necessita seguir os seguintes passos:
+
+-<b>Clone o repositório.</b>
+
+-<b>Entre na pasta raiz.</b>
+
+-<b>Entre na pasta: ServidorNode-main</b>
+```sh
+cd ServidorNode-main
+```
+
+-<b>Rode dentro da pasta: ServidorNode-main</b>
+```sh
+node app.js
+```
+
+Agora, entre na pasta easyeats.
+```sh
+cd easyeats
+```
+
+Rode o comando para instalar as dependências.
+```sh
+npm install
+```
+
+Logo após ter instalado as dependências, rode o comando para rodar o Angular.
+```sh
+ng serve
+```
+
+Prontinho, após seguir estes passos o projeto estará rodando.
 
 ## 🗃 Histórico de lançamentos
 
