@@ -51,7 +51,7 @@ Por isso, criamos um aplicativo web mobile que melhora o atendimento em restaura
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 3 pastas que seguem da seguinte forma:
 
 <b>ServidorNode-main</b>: Toda a estrutura do banco de dados e do node está nesta pasta.
 
