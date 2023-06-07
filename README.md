@@ -112,7 +112,7 @@ npm install
 ```sh
 ng serve
 ```
-
+<br>
 Prontinho, após seguir estes passos o projeto estará rodando.
 
 ## 🗃 Histórico de lançamentos
