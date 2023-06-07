@@ -15,7 +15,9 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="https://github.com/2023-1-NADS3/E1-EasyEats/assets/106892141/28af9568-7c95-4814-ab59-428899e4cfa3" alt="EASY LOGO" border="0">
+ 
+ 
  
 </p>
 Nós acreditamos que todos merecem ter uma experiência agradável e eficiente ao frequentar um restaurante. Sabemos que esperar por um atendimento demorado e errar os pedidos pode ser frustrante para os clientes e sobrecarregar os funcionários. 
