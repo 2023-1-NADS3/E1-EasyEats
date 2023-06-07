@@ -67,7 +67,7 @@ Para abrir este projeto, você necessita das seguintes ferramentas:
 -<b>Angular Freamework</b>
 <br>
 -<b>Node</b>
-<br>
+<br><br>
 Primeiro faça download do node no seguinte site:
 https://nodejs.org/en/download
 
@@ -93,22 +93,22 @@ Para poder rodar este projeto, você necessita seguir os seguintes passos:
 cd ServidorNode-main
 ```
 
--<b>Rode dentro da pasta: ServidorNode-main</b>
+-<b>Rode dentro da pasta: ServidorNode-main</b></b>
 ```sh
 node app.js
 ```
 <br><br>
-Agora, entre na pasta easyeats.
+-<b>Agora, entre na pasta easyeats.</b>
 ```sh
 cd easyeats
 ```
 
-Rode o comando para instalar as dependências.
+-<b>Rode o comando para instalar as dependências.</b>
 ```sh
 npm install
 ```
 
-Logo após ter instalado as dependências, rode o comando para rodar o Angular.
+-<b>Logo após ter instalado as dependências, rode o comando para rodar o Angular.</b>
 ```sh
 ng serve
 ```
