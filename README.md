@@ -44,6 +44,7 @@ Por isso, criamos um aplicativo web mobile que melhora o atendimento em restaura
   &emsp;|-->_Geral<br>
   &emsp;&emsp;|-->Qualidade de Software e Teste de Componentes<br>
   &emsp;&emsp;|-->User Experience<br>
+  &emsp;&emsp;|-->Docker<br>
 |-->easyeats<br>
   &emsp;|-->Frontend Angular<br>
 |readme.md<br>
