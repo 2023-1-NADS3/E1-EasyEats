@@ -10,7 +10,7 @@
 
 ## Integrantes: <a href="https://www.linkedin.com/in/breno-rosa-barbosa-55544918a/">Breno Barbosa</a>, <a href="https://www.linkedin.com/in/thainabeatriz/">Thaina Beatriz</a>, <a href="https://www.linkedin.com/in/esdras-mendes/">Esdras Mendes</a>, <a href="https://www.linkedin.com/in/caique-matos-055841111/">Caique Matos</a>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno</a>, <a href="https://www.linkedin.com/in/jefferson-o-silva/">Jefferson Silva</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Lopes</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno</a>, <a href="https://www.linkedin.com/in/jefferson-o-silva/">Jefferson Silva</a>, <a href="https://www.linkedin.com/in/aimarlopes/">Aimar Lopes</a>, <a href="https://www.linkedin.com/in/francisco-escobar/">Francisco Escobar</a> <a href="https://www.linkedin.com/in/adriano-valente-534576135/">Adriano Valente</a>
 
 ## Descrição
 
